@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>刘津</title>
+    <!--用来加载外部资源-->
+    <!--相对路径/绝对路径-->
+    <link rel="short icon" href="Resource/icon.png">
+    <!--styleseet用来加载外部样式表/链接css-->
+
+    <link rel="stylesheet" href="ExternalStyle.css">
+    <style>
+
+        .L_body{
+            background-color: red;
+        }
+        .L_second_div{
+            text-align: center;
+            background-color:#c50206;
+        }
+        .L_second_div img{
+            margin-top: 20px;
+
+        }
+
+        .L_one_div{
+            margin: 0 auto;
+            color: white;
+        }
+
+
+
+        .L_form_div{
+            background:red;
+            width: 80%;
+            /*账户名密码*/
+            margin: 0 auto;
+            /*居中*/
+            border: 1px solid #ffff00;
+            border-radius: 5px;
+            height: 140px;
+            margin-top: 30px;
+
+        }
+        /*调字体*/
+        .L_account_div{
+            height: 50px;
+            border-bottom: 2px solid #ffff00;
+            color: white;
+            border-radius: 5px;     /*边框边弧形*/
+        }
+
+        .L_form_div div span{
+            font-size: 20px;
+            padding-left: 15px;
+            line-height: 50px;  /*使文字居中*/
+            color: white;
+
+
+        }
+        /*调框框*/
+        input{
+            outline: medium;
+            background-color: red;
+            border: 0;
+        }
+        .L_login_btn_div{
+            height: 50px;
+            background:red;
+            width: 90%;
+            border-radius: 10px;
+            margin:20px  auto;
+            text-align: center;
+
+
+        }
+        .L_login_btn_div input{
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            /*登录字体位置*/
+
+        }
+
+        .L_left_img{
+            float: left;
+            margin-right: 10px;
+            margin-top: 10px;
+            transform:rotate(180deg);
+        }
+       .DS_header{
+           background-color: red;
+       }
+        .L_second_div{
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body  class="L_body" background="red" style="font-size: 12px;">
+
+
+
+<!--第一部分-->
+<!--语义化标签：增强代码的可读性-->
+<header class="DS_header">
+    <div class="L_one_div">
+        <img class="L_left_img" src="Resource/right.png" alt="">
+        <span>登录</span>
+    </div>
+</header>
+
+
+<!--第二部分-->
+
+<div class="L_second_div">
+    <img class="L_head_img"  src="Resource/a/logo.png" alt="">
+
+</div>
+<!--第三部分 -->
+<form action="">
+
+    <div class="L_form_div">
+        <div class="L_account_div">
+            <span>身份证号：</span>
+            <input type="text" name="account"><br><br>
+        </div>
+
+
+        <div class="L_account_div">
+            <span>密码:</span>
+            <input  type="password" name="password"><br>
+        </div>
+
+    </div>
+
+    <div class="L_login_btn_div">
+        <input type="button" value="登录">
+    </div>
+
+
+</form>
+</body>
+</html>
